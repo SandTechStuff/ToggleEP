@@ -36,12 +36,12 @@
 			WindowsDxgiEnabled = new Label();
 			StartDxgiEnabled = new Label();
 			ShellDxgiEnabled = new Label();
-			button1 = new Button();
-			button2 = new Button();
-			button3 = new Button();
-			button4 = new Button();
-			button5 = new Button();
-			button6 = new Button();
+			DisableWindowsDxgi = new Button();
+			EnableWindowsDxgi = new Button();
+			DisableStartDxgi = new Button();
+			EnableStartDxgi = new Button();
+			DisableShellDxgi = new Button();
+			EnableShellDxgi = new Button();
 			SuspendLayout();
 			// 
 			// DisableButton
@@ -93,97 +93,102 @@
 			// 
 			// WindowsDxgiEnabled
 			// 
-			WindowsDxgiEnabled.AutoSize = true;
-			WindowsDxgiEnabled.Location = new Point(129, 49);
+			WindowsDxgiEnabled.Location = new Point(118, 49);
 			WindowsDxgiEnabled.Name = "WindowsDxgiEnabled";
-			WindowsDxgiEnabled.Size = new Size(59, 15);
+			WindowsDxgiEnabled.Size = new Size(100, 15);
 			WindowsDxgiEnabled.TabIndex = 5;
 			WindowsDxgiEnabled.Text = "Loading...";
+			WindowsDxgiEnabled.TextAlign = ContentAlignment.MiddleCenter;
 			// 
 			// StartDxgiEnabled
 			// 
-			StartDxgiEnabled.AutoSize = true;
-			StartDxgiEnabled.Location = new Point(129, 95);
+			StartDxgiEnabled.Location = new Point(118, 95);
 			StartDxgiEnabled.Name = "StartDxgiEnabled";
-			StartDxgiEnabled.Size = new Size(59, 15);
+			StartDxgiEnabled.Size = new Size(100, 15);
 			StartDxgiEnabled.TabIndex = 6;
 			StartDxgiEnabled.Text = "Loading...";
+			StartDxgiEnabled.TextAlign = ContentAlignment.MiddleCenter;
 			// 
 			// ShellDxgiEnabled
 			// 
-			ShellDxgiEnabled.AutoSize = true;
-			ShellDxgiEnabled.Location = new Point(129, 141);
+			ShellDxgiEnabled.Location = new Point(118, 141);
 			ShellDxgiEnabled.Name = "ShellDxgiEnabled";
-			ShellDxgiEnabled.Size = new Size(59, 15);
+			ShellDxgiEnabled.Size = new Size(100, 15);
 			ShellDxgiEnabled.TabIndex = 7;
 			ShellDxgiEnabled.Text = "Loading...";
+			ShellDxgiEnabled.TextAlign = ContentAlignment.MiddleCenter;
 			// 
-			// button1
+			// DisableWindowsDxgi
 			// 
-			button1.Location = new Point(12, 67);
-			button1.Name = "button1";
-			button1.Size = new Size(100, 25);
-			button1.TabIndex = 8;
-			button1.Text = "Disable Module";
-			button1.UseVisualStyleBackColor = true;
-			button1.Click += button1_Click;
+			DisableWindowsDxgi.Location = new Point(12, 67);
+			DisableWindowsDxgi.Name = "DisableWindowsDxgi";
+			DisableWindowsDxgi.Size = new Size(100, 25);
+			DisableWindowsDxgi.TabIndex = 8;
+			DisableWindowsDxgi.Text = "Disable Module";
+			DisableWindowsDxgi.UseVisualStyleBackColor = true;
+			DisableWindowsDxgi.Click += DisableWindowsDxgi_Click;
 			// 
-			// button2
+			// EnableWindowsDxgi
 			// 
-			button2.Location = new Point(118, 67);
-			button2.Name = "button2";
-			button2.Size = new Size(100, 25);
-			button2.TabIndex = 9;
-			button2.Text = "Enable Module";
-			button2.UseVisualStyleBackColor = true;
+			EnableWindowsDxgi.Location = new Point(118, 67);
+			EnableWindowsDxgi.Name = "EnableWindowsDxgi";
+			EnableWindowsDxgi.Size = new Size(100, 25);
+			EnableWindowsDxgi.TabIndex = 9;
+			EnableWindowsDxgi.Text = "Enable Module";
+			EnableWindowsDxgi.UseVisualStyleBackColor = true;
+			EnableWindowsDxgi.Click += EnableWindowsDxgi_Click;
 			// 
-			// button3
+			// DisableStartDxgi
 			// 
-			button3.Location = new Point(12, 113);
-			button3.Name = "button3";
-			button3.Size = new Size(100, 25);
-			button3.TabIndex = 10;
-			button3.Text = "Disable Module";
-			button3.UseVisualStyleBackColor = true;
+			DisableStartDxgi.Location = new Point(12, 113);
+			DisableStartDxgi.Name = "DisableStartDxgi";
+			DisableStartDxgi.Size = new Size(100, 25);
+			DisableStartDxgi.TabIndex = 10;
+			DisableStartDxgi.Text = "Disable Module";
+			DisableStartDxgi.UseVisualStyleBackColor = true;
+			DisableStartDxgi.Click += DisableStartDxgi_Click;
 			// 
-			// button4
+			// EnableStartDxgi
 			// 
-			button4.Location = new Point(118, 113);
-			button4.Name = "button4";
-			button4.Size = new Size(100, 25);
-			button4.TabIndex = 11;
-			button4.Text = "Enable Module";
-			button4.UseVisualStyleBackColor = true;
+			EnableStartDxgi.Location = new Point(118, 113);
+			EnableStartDxgi.Name = "EnableStartDxgi";
+			EnableStartDxgi.Size = new Size(100, 25);
+			EnableStartDxgi.TabIndex = 11;
+			EnableStartDxgi.Text = "Enable Module";
+			EnableStartDxgi.UseVisualStyleBackColor = true;
+			EnableStartDxgi.Click += EnableStartDxgi_Click;
 			// 
-			// button5
+			// DisableShellDxgi
 			// 
-			button5.Location = new Point(12, 159);
-			button5.Name = "button5";
-			button5.Size = new Size(100, 25);
-			button5.TabIndex = 12;
-			button5.Text = "Disable Module";
-			button5.UseVisualStyleBackColor = true;
+			DisableShellDxgi.Location = new Point(12, 159);
+			DisableShellDxgi.Name = "DisableShellDxgi";
+			DisableShellDxgi.Size = new Size(100, 25);
+			DisableShellDxgi.TabIndex = 12;
+			DisableShellDxgi.Text = "Disable Module";
+			DisableShellDxgi.UseVisualStyleBackColor = true;
+			DisableShellDxgi.Click += DisableShellDxgi_Click;
 			// 
-			// button6
+			// EnableShellDxgi
 			// 
-			button6.Location = new Point(118, 157);
-			button6.Name = "button6";
-			button6.Size = new Size(100, 25);
-			button6.TabIndex = 13;
-			button6.Text = "Enable Module";
-			button6.UseVisualStyleBackColor = true;
+			EnableShellDxgi.Location = new Point(118, 159);
+			EnableShellDxgi.Name = "EnableShellDxgi";
+			EnableShellDxgi.Size = new Size(100, 25);
+			EnableShellDxgi.TabIndex = 13;
+			EnableShellDxgi.Text = "Enable Module";
+			EnableShellDxgi.UseVisualStyleBackColor = true;
+			EnableShellDxgi.Click += EnableShellDxgi_Click;
 			// 
 			// Form1
 			// 
 			AutoScaleDimensions = new SizeF(7F, 15F);
 			AutoScaleMode = AutoScaleMode.Font;
 			ClientSize = new Size(231, 194);
-			Controls.Add(button6);
-			Controls.Add(button5);
-			Controls.Add(button4);
-			Controls.Add(button3);
-			Controls.Add(button2);
-			Controls.Add(button1);
+			Controls.Add(EnableShellDxgi);
+			Controls.Add(DisableShellDxgi);
+			Controls.Add(EnableStartDxgi);
+			Controls.Add(DisableStartDxgi);
+			Controls.Add(EnableWindowsDxgi);
+			Controls.Add(DisableWindowsDxgi);
 			Controls.Add(ShellDxgiEnabled);
 			Controls.Add(StartDxgiEnabled);
 			Controls.Add(WindowsDxgiEnabled);
@@ -210,14 +215,14 @@
 		private Label WindowsDxgiLabel;
 		private Label StartDxgiLabel;
 		private Label ShellDxgiLabel;
-		private Button button1;
+		private Button DisableWindowsDxgi;
 		private Label WindowsDxgiEnabled;
 		private Label StartDxgiEnabled;
 		private Label ShellDxgiEnabled;
-		private Button button2;
-		private Button button3;
-		private Button button4;
-		private Button button5;
-		private Button button6;
+		private Button EnableWindowsDxgi;
+		private Button DisableStartDxgi;
+		private Button EnableStartDxgi;
+		private Button DisableShellDxgi;
+		private Button EnableShellDxgi;
 	}
 }
